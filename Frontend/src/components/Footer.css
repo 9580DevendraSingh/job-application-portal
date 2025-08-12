@@ -1,0 +1,144 @@
+/* .footer_container{
+    margin: 48px 0px 0px;
+    padding: 48px 12px 0px;
+    background-color: #111111;
+    border: 1px solid black;
+    font: 16px "Open Sans",sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row{
+    color: #777777;
+    font: 16px "Open Sans",sans-serif;
+    margin: -48px -24px 0px;
+}
+
+.col-lg-1 {
+    color: #777777;
+    font: 16px "Open Sans",sans-serif;
+    margin: 48px 0px 0px;
+    padding: 0px 24px;
+}
+img{
+    width: 250px;
+    height: 90px;
+} */
+
+.footer_container {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 50px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.element_container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.col-lg-1 {
+  flex: 1 1 220px;
+}
+
+.col-lg-1 h4,
+.col-lg-1 h5 {
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+.col-lg-1 img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer_logo a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #00bcd4;
+  transition: color 0.3s ease;
+}
+
+.footer_logo a:hover {
+  color: yellow;
+}
+
+.col-lg-1 a {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  margin: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.col-lg-1 a:hover {
+  color: #00bcd4;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.position input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.position button {
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.position button:hover {
+  background-color: #0097a7;
+}
+
+/* Bottom Footer */
+.fluid_container {
+  background-color: #151521;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.row1 a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.row1 a:hover {
+  text-decoration: underline;
+}

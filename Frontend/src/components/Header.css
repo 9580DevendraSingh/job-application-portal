@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Top bar containing logo + marquee */
+.top-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,255,255,0.3);
+  overflow: hidden;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin: 8px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0,255,255,0.5);
+}
+
+/* Marquee */
+.marquee-container {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.marquee-text {
+  display: block;
+  padding: 0 0;
+  font-size: 16px;
+  color: #00ffff;
+  font-weight: 600;
+  text-shadow: 0 0 15px rgba(0,255,255,0.7);
+  animation: scroll-left 18s linear infinite;
+  letter-spacing: 1px;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background: rgba(30,41,59,0.7);
+  backdrop-filter: blur(12px);
+}
+
+/* Rest nav styling same as before */
+.nav-item {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #00ffff;
+  background: rgba(0,255,255,0.1);
+  box-shadow: 0 4px 12px rgba(0,255,255,0.3);
+}
+
+/* Apply Button */
+.apply-button {
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #00ffff, #00cccc);
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-button:hover {
+  background: linear-gradient(135deg, #00cccc, #00ffff);
+  transform: translateY(-3px) scale(1.05);
+}
